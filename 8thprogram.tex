@@ -1,0 +1,44 @@
+\documentclass{article}
+
+\usepackage{amsthm}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{definition}{Definition}
+\newtheorem{corollary}{Corollary}
+\newtheorem{lemma}{Lemma}
+
+\begin{document}
+	
+	\title{Numbered Theorems, Definitions, Corollaries, and Lemmas in the Document}
+	\date{}
+	\maketitle
+	
+	\begin{theorem}
+		(Pythagorean Theorem) In a right-angled triangle, the square of the length of the hypotenuse is equal to the sum of the squares of the lengths of the other two sides.
+		\begin{equation}
+			a^2 + b^2 = c^2
+		\end{equation}
+	\end{theorem}
+	
+	\begin{definition}
+		(Prime Number) A prime number is a natural number greater than 1 that is not divisible by any number other than 1 and itself.
+		\begin{itemize}
+			\item Example: 2, 3, 5, and 7 are prime numbers.
+		\end{itemize}
+	\end{definition}
+	
+	\begin{corollary}
+		(Euclid's Corollary) There are infinitely many prime numbers.
+		\begin{itemize}
+			\item Proof: Assume there are finitely many primes. Let them be $p_1, p_2, \ldots, p_n$. Consider the number $N = p_1 \cdot p_2 \cdots p_n + 1$. This number is not divisible by any of the primes $p_1$ through $p_n$. Therefore, there must be a prime factor not in the list, contradicting the assumption that there are only finitely many primes.
+		\end{itemize}
+	\end{corollary}
+	
+	\begin{lemma}
+		(Basic Arithmetic Identity) For any real numbers $a$ and $b$, we have:
+		\begin{equation}
+			(a + b)^2 = a^2 + 2ab + b^2.
+		\end{equation}
+	\end{lemma}
+	
+\end{document}

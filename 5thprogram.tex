@@ -1,0 +1,44 @@
+
+\documentclass{article}
+
+\usepackage{multirow}
+
+\begin{document}
+	
+	\begin{table}[h!]
+		
+		\centering
+		
+		\caption{Table with student data}
+		
+		\label{tab:table}
+		
+		\begin{tabular}{|c|c|c|c|c|c|}
+			
+			\hline
+			
+			\multirow{2}{*}{S. No} & \multirow{2}{*}{USN} &
+			\multirow{2}{*}{Student Name} & \multicolumn{3}{c|}{Marks} \\
+			
+			\cline{4-6}
+			
+			& & & Subject 1 & Subject 2 & Subject 3 \\
+			
+			\hline
+			
+			1 & kv107 & Sharath & 89 & 87 & 90 \\
+			
+			\hline
+			
+			2 & kv108 & Abhinav & 79 & 89 & 95 \\
+			
+			\hline
+			
+			3 & kv109 & Krishna & 77 & 90 & 97 \\
+			
+			\hline
+			
+		\end{tabular}
+		
+	\end{table}
+\end{document}
